@@ -42,7 +42,7 @@ data class StreamInfo(
     var tags: List<String>? = null,
     var staffs: Collection<StaffInfo>? = null,
     // local properties
-    val progress: Long? = null,
+    val progress: Long? = null, // in milliseconds
     val joinId: Long? = null,
     val localLastViewDate: Long? = null,
     val localRepeatCount: Long? = null,
