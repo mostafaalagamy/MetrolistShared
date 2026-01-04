@@ -60,5 +60,6 @@ data class StreamInfoWithCallback(
     val onNavigateTo: (() -> Unit)? = null,
     val onDelete: (() -> Unit)? = null,
     val disablePlayOperations: Boolean = false,
-    val showProvideDetailButton: Boolean = false
+    val showProvideDetailButton: Boolean = false,
+    val onSetAsCover: (() -> Unit)? = null
 ): Info
