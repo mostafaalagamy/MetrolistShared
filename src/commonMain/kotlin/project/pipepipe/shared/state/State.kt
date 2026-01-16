@@ -2,8 +2,10 @@ package project.pipepipe.shared.state
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import project.pipepipe.shared.infoitem.ChannelInfo
 import project.pipepipe.shared.infoitem.CookieInfo
 import project.pipepipe.shared.infoitem.Info
+import project.pipepipe.shared.infoitem.PlaylistInfo
 import project.pipepipe.shared.infoitem.StreamInfo
 import project.pipepipe.shared.job.ExtractResult
 
@@ -23,6 +25,22 @@ data class StreamExtractState(
     override val step: Int,
     val streamInfo: StreamInfo
 ): State
+
+@Serializable
+@SerialName("PlaylistExtractState")
+data class PlaylistExtractState(
+    override val step: Int,
+    val playlistInfo: PlaylistInfo
+): State
+
+@Serializable
+@SerialName("ChannelExtractState")
+data class ChannelExtractState(
+    override val step: Int,
+    val channelInfo: ChannelInfo
+): State
+
+
 
 @Serializable
 data class MetaDataExtractState(
