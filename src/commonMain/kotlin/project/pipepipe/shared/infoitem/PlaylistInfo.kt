@@ -13,7 +13,6 @@ data class PlaylistInfo(
     var uploaderAvatarUrl: String? = null,
     var streamCount: Long = 0,
     // Local properties
-    var isPinned: Boolean = false,
     var uid: Long? = null,
     var shouldUseSecondaryColor: Boolean = false
 ): Info
