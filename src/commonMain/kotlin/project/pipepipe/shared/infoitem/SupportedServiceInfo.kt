@@ -22,5 +22,6 @@ data class SupportedServiceInfo(
     val trendingList: List<TrendingInfo> = emptyList(),
     val feedFetchInterval: Int = 0,
     val themeColor: String = "#FFFFFF",
-    val urlPatterns: Map<ExternalUrlType, List<String>> = emptyMap()
+    val urlPatterns: Map<ExternalUrlType, List<String>> = emptyMap(),
+    val supportFastFeed: Boolean = false
 ): Info
