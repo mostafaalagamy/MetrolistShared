@@ -19,10 +19,10 @@ plugins {
 }
 
 version = "5.0.0-rc"
-group = "project.pipepipe"
+group = "com.github.mostafaalagamy"
 
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(17)
 
     jvm {
     }
